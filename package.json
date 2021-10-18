@@ -3,6 +3,5 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "create-react-app": "^4.0.3"
   }
 }
