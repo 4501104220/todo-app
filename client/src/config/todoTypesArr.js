@@ -1,1 +1,1 @@
-export default ['Work', 'Hardwork', 'Learning', 'Chill'];
+export default ['Work', 'Hardwork', 'Learning', 'Relax', 'Other'];

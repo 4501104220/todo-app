@@ -1,3 +1,4 @@
-import openweatherKey from "./openweatherKey";
+//import openweatherKey from "./openweatherKey";
 
-export default `http://api.openweathermap.org/data/2.5/weather?id=524901&APPID=${openweatherKey}&units=metric`
+
+export default `api.openweathermap.org/data/2.5/weather?zip={700000},{+84}&appid={562b00a341ea54ac6b1c44bf6bd4eeb8}`
