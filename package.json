@@ -3,5 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "main": "index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "build-client": "cd client && npm run build",
+    "heroku-postbuild": "npm run install-client && npm run install-server && npm install concurrently && npm run build-client",
+    "start-client": "cd client && npm start",
+    "start-server": "cd server && npm start",
+    "start": "concurrently \"npm run start-server\" \"npm run start-client\"",
+    "dev": "concurrently \"cd server && npm run dev\" \" cd client && npm run dev\"",
+    "install-dev": "npm run install-client && npm run install-server"
   }
-}
+ }
